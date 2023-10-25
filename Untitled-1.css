@@ -1,0 +1,476 @@
+body{
+    background-color: #dff5ff;
+    transition: background 0.2s linear;
+}
+
+.dark-mode {
+  background-color: #012b39;
+  color: white;
+  transition: background 0.2s linear;
+}
+
+.logoicon {
+  display: flex;
+  width: 240px;
+  height: 240px;
+}
+
+.example-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+
+body, h1, h2, h3, h4, h5, h6  {
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+h1{
+  padding-top: 40px;
+}
+
+.button-74 {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 30px;
+  box-shadow: #000000 4px 4px 0 0;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 15px;
+  transition: all 0.5s;
+}
+
+.button-74:hover {
+  line-height: 60px;
+  width: 538px;
+  transition-duration: 400ms;
+  background-color: #ebebeb;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 500px) {
+  .button-74 {
+    min-width: 500px;
+    width: 500px;
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .button-74 {
+    max-width: 500px;
+    width: 500px;
+    padding: 0 25px;
+  }
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 50px;
+
+}
+
+.allinclusive{
+    padding: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.title-all{
+  padding: 0% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer{
+  padding-top: 100px;
+  display: flex;  
+  align-items: flex-end;
+  justify-content: center;
+  font-family: "Lucida Console", Monaco, monospace;
+  color: #012b39;
+}
+
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 30px;
+  box-shadow: #000000 4px 4px 0 0;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 15px;
+  transition: all 0.5s;
+}
+
+.collapsible:hover{
+  line-height: 60px;
+  width: 530px;
+  transition-duration: 400ms;
+}
+
+@media (min-width: 500px) {
+  .collapsible{
+    min-width: 500px;
+    width: 500px;
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .collapsible{
+    max-width: 500px;
+    width: 500px;
+    padding: 0 25px;
+  }
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ebebeb;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  min-width: 500px;
+  width: 500px;
+
+  background-color: #ffffff;
+
+  border-radius: 30px;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 50px;
+  text-align: justify;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 0px;
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: -25px;
+}
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap");
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins' , sans-serif;
+}
+
+body{
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.wrapper{
+  padding-top: 100px;
+  
+}
+
+.button{
+  height: 60px;
+  width: 60px;
+  margin: 10px;
+  float: left;
+  cursor: pointer;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 10px;
+  line-height: 60px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+}
+
+a:visited, a:active {
+  color: rgb(0, 0, 0);
+}
+
+.button .icon{
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.button .icon a{
+  font-size: 25px;
+  transition: all 0.3s ease-in-out;
+  line-height: 60px;
+}
+
+.button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+
+}
+
+.button:nth-child(1):hover .icon{
+  background: #012b39;
+}
+.button:nth-child(2):hover .icon{
+  background: #012b39;
+}
+.button:nth-child(3):hover .icon{
+  background: #012b39;
+}
+.button:nth-child(4):hover .icon{
+  background: #012b39;
+}
+.button:nth-child(5):hover .icon{
+  background: #ff0000;
+}
+.button:nth-child(6):hover .icon{
+  background: #333;
+}
+
+
+
+.button:nth-child(1) span{
+  color: #012b39; 
+}
+.button:nth-child(2) span{
+  color: #012b39;
+}
+.button:nth-child(3) span{
+  color: #012b39;
+}
+.button:nth-child(4)span{
+  color: #012b39;
+}
+.button:nth-child(5)span{
+  color: #ff0000;
+}
+.button:nth-child(6)span{
+  color: #333;
+}
+
+
+.button:hover i{
+  color: #fff;
+}
+
+.button:hover{
+  width: 200px;
+}
+
+* {
+  box-sizing: border-box
+}
+.image-slideshow {
+max-width: 1000px;
+position: relative;
+margin: auto;
+padding-top: 20px;
+}
+img {
+width: 100%
+}
+.fade {
+animation-name: fade;
+animation-duration: 2s;
+}
+@keyframes fade {
+from {opacity: .5}
+to {opacity: 1}
+}
+
+
+/* Toggle Button */
+#toggle {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 60px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #012b39;
+  position: absolute;
+  top: 50px;
+  right: 690px;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#toggle::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #EEE;
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+  transition: all 0.5s ease-in;
+}
+
+#toggle:checked {
+  background: #dff5ff;
+}
+
+#toggle:checked::before {
+  background: #012b39;
+  left: 32px;
+}
+
+
+.sidebar {
+  height: 100%;
+  width: 400px;
+  position: fixed;
+  top: 0;
+  left: -400px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 10px;
+  text-align: center;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.toggle-button {
+  background-color: transparent;
+  border: none;
+  color: #012b39;
+  padding: 10px 15px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  scale: 3;
+}
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
